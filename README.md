@@ -59,6 +59,51 @@ y_train = y.loc[training_begin:training_end]
 # Review the X_train DataFrame
 X_train.head()
 ```
-
 ------
+
+# Scikit-learn
+We used Scikit-learn 
+
+* We used StandardScaler to Standardize features by removing the mean and scaling to unit variance.
+* We used Transform to perform standardization by centering and scaling.
+* We used classification report to evaluate the model
+---
 ```
+# Scale the features DataFrames
+
+# Create a StandardScaler instance
+scaler = StandardScaler()
+
+# Apply the scaler model to fit the X-train data
+X_scaler = scaler.fit(X_train)
+
+# Transform the X_train and X_test DataFrames using the X_scaler
+X_train_scaled = X_scaler.transform(X_train)
+X_test_scaled = X_scaler.transform(X_test)
+
+# Create a StandardScaler instance
+scaler = StandardScaler()
+
+# Fit the scaler to the features training dataset
+X_scaler = scaler.fit(X_train)  
+
+X_train_scaled = X_scaler.transform(X_train)
+
+X_test_scaled = X_scaler.transform(X_test)
+
+# Use a classification report to evaluate the model using the predictions and testing data
+svm_testing_report = classification_report(y_test, test_svm_pred)
+
+# Print the classification report
+# YOUR CODE HERE
+print(svm_testing_report)
+```
+---
+
+
+https://scikit-learn.org/stable/
+Scikit-learn provides a range of supervised and unsupervised learning algorithms via a consistent interface in Python.
+
+![Scikit](https://miro.medium.com/max/866/1*1ouD8HMkmJffNSAMfvBSkw.png)
+
+---
