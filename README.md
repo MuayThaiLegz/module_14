@@ -61,6 +61,14 @@ X_train.head()
 ```
 ------
 
+https://pandas.pydata.org/
+Package overview
+pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis/manipulation tool available in any language. It is already well on its way toward this goal.
+
+![Pandas](https://miro.medium.com/max/819/1*Dss7A8Z-M4x8LD9ccgw7pQ.png)
+
+------
+
 # Scikit-learn
 We used Scikit-learn 
 
